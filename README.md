@@ -6,6 +6,10 @@ GitHub Pages 公開中の Vite プロジェクトです。
 
 - https://eireirjp.github.io/mico2/
 
+## スクリーンショット
+
+![mico2 スクリーンショット](https://image.thum.io/get/width/1200/https://eireirjp.github.io/mico2/)
+
 ## ローカル開発
 
 ```bash
