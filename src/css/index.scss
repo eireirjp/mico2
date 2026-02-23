@@ -1,0 +1,242 @@
+// Bootstrapの本体を読み込む
+@import "bootstrap/scss/bootstrap";
+
+$navbar-height: 56px;
+
+html {
+  font-family: "M PLUS 1", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  margin: 0;
+  font-weight: 100;
+  line-height: 1.8;
+  /* text-align: center; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: "";
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+p {
+  font-size: 1.1rem;
+}
+
+.o-inner {
+  padding: 0 24px;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.navbar-transparent {
+  // 背景色を rgba で指定 (白の 80% など)
+  background-color: rgba(255, 255, 255, 0.7);
+
+  // 背後をぼかす (これが磨りガラス効果の正体)
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); // Safari対策
+}
+
+[id] {
+  scroll-margin-top: $navbar-height;
+}
+
+.c-heading {
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.c-kv {
+  background-color: #f8f9f2;
+  min-height: 90vh;
+  padding: 3rem;
+  display: grid;
+  justify-items: flex-start;
+  align-content: flex-end;
+  .row {
+    align-items: flex-end;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+.c-story {
+  background-color: #edece4;
+}
+
+.c-story__inner {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+  // grid-template-columns: 1fr 30%;
+  // min-height: 500px;
+
+  @include media-breakpoint-up(md) {
+    display: grid;
+    grid-template-rows: 1fr 10%;
+    grid-template-columns: 70% 1fr;
+    // min-height: 500px;
+  }
+
+  .c-story__text-box {
+    grid-row: 2/3;
+    @include media-breakpoint-up(md) {
+      grid-row: 1/2;
+      grid-column: 2/3;
+      align-self: flex-end;
+    }
+  }
+  .c-story__img {
+    grid-row: 1/2;
+    @include media-breakpoint-up(md) {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.c-menu {
+  background-color: #edece5;
+}
+
+.c-medicalaloma {
+  background-color: #f8f9f2;
+}
+
+.c-medicalaloma ul {
+  list-style: "";
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  @include media-breakpoint-up(md) {
+    margin-top: 24px;
+  }
+}
+
+.c-medicalaloma__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.c-menu__table {
+  font-weight: normal;
+  width: 100%;
+  thead {
+    border-bottom: 1px solid #333;
+    th {
+      padding-bottom: 8px;
+      text-align: center;
+    }
+  }
+  th,
+  td {
+    font-weight: 400;
+    padding: 8px 4px;
+    span {
+      display: block;
+    }
+  }
+  td {
+    text-align: center;
+  }
+  tbody {
+    th {
+      padding-right: 1rem;
+      padding-bottom: 2rem;
+      span {
+        font-weight: 500;
+        font-size: 1.1rem;
+        padding-bottom: 5px;
+      }
+    }
+    td {
+      padding-inline: 0.5rem;
+    }
+  }
+}
+.table-responsive-stack {
+  @include media-breakpoint-down(md) {
+    thead {
+      display: none;
+    } // ヘッダーを隠す
+
+    tr {
+      display: block;
+      margin-bottom: 1rem;
+      border: 1px solid #333;
+      padding: 0.5rem;
+    }
+
+    td {
+      display: block;
+      text-align: right; // 値を右に
+      position: relative;
+      padding-left: 50%; // ラベル用のスペース
+
+      &::before {
+        content: attr(data-label); // HTMLのdata属性からラベルを表示
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-align: left;
+      }
+    }
+  }
+}
+.c-contact {
+  background-color: #323232;
+  color: white;
+}
+
+.c-contact__inner {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.5rem;
+  @include media-breakpoint-up(md) {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 1.5rem;
+  }
+}
+.c-contact__text-box {
+  @include media-breakpoint-up(md) {
+    flex: 1 1 auto;
+  }
+  .c-contact-form a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.c-contact__img {
+  flex: 0 0 70%;
+  img {
+    width: 100%;
+  }
+}

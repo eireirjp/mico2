@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>みこずあろま</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.scss">
+</head>
+
+<body>
+  <header class="navbar-transparent fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">みこずあろま</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav" x-ref="navMenu">
+          <ul class="navbar-nav ms-auto"
+            @click="if(window.innerWidth < 768) bootstrap.Collapse.getInstance($refs.navMenu).hide()">
+            <li class="nav-item">
+              <a class="nav-link active" href="#story">Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#medicalaloma">メディカルアロマ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">施術メニュー</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">予約・お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="c-kv">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h1 class="c-kv__title">阿蘇の自然に<br>心が解き放たれる</h1>
+          </div>
+          <div class="col-md-8">
+            <img src="https://placehold.jp/800x500.png" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="story" class="c-story">
+      <div class="o-inner py-5">
+        <div class="c-story__inner">
+          <div class="c-story__text-box">
+            <h2 class="c-heading c-story__heading">Story</h2>
+            <p class="c-story__text">実子のポリシー的なお話ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+          </div>
+          <div class="c-story__img">
+            <img src="https://placehold.jp/800x500.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="medicalaloma" class="c-medicalaloma">
+      <div class="o-inner py-5">
+        <h2 class="c-heading c-medicalaloma__heading">メディカルアロマ</h2>
+        <ul class="my-4">
+          <li>
+            <article class="c-medicalaloma__detail">
+              <figure>
+                <img src="https://placehold.jp/150x150.png" alt="">
+              </figure>
+              <h3>コンサルテーション</h3>
+              <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+            </article>
+          </li>
+          <li>
+            <article class="c-medicalaloma__detail">
+              <figure>
+                <img src="https://placehold.jp/150x150.png" alt="">
+              </figure>
+              <h3>アロマオイル選び・調合</h3>
+              <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+            </article>
+          </li>
+          <li>
+            <article class="c-medicalaloma__detail">
+              <figure>
+                <img src="https://placehold.jp/150x150.png" alt="">
+              </figure>
+              <h3>施術</h3>
+              <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+            </article>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+    <section id="menu" class="c-menu">
+      <div class="o-inner py-5">
+        <h2 class="c-heading c-menu__heading">施術メニュー</h2>
+        <table class="c-menu__table table-responsive-stack">
+          <thead>
+            <tr>
+              <th></th>
+              <th>時間</th>
+              <th>料金</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>
+                <span>初回お試し全身施術</span>
+                テストテスト
+              </th>
+              <td>
+
+              </td>
+              <td>
+                4,000円〜
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <span>部分アロマテラピー</span>
+                手、足、腕などに、ご相談の上施術します
+              </th>
+              <td>
+
+              </td>
+              <td>
+                2,000円〜
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <span>全身アロマテラピー</span>
+                飲み物付き。1,000円プラスでオーガニック薬膳カレー付き
+              </th>
+              <td>
+                60min
+              </td>
+              <td>
+                8,000円〜
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <span>スペシャルアロマテラピー</span>
+                ヘッドマッサージとオーガニック薬膳カレー、飲み物付き
+              </th>
+              <td>
+                120min
+              </td>
+              <td>
+                12,000円
+                <br>
+                <small>
+                  ※リピーター割引 10,000円
+                </small>
+              </td>
+            </tr>
+          </tbody>
+          <caption>※ 飲み物：阿蘇湧水コーヒー オーガニック紅茶 ハーブティー</caption>
+        </table>
+      </div>
+    </section>
+    <section id="contact" class="c-contact">
+      <div class="o-inner">
+        <div class="c-contact__inner py-5">
+          <div class="c-contact__text-box">
+            <h2 class="c-heading c-contact__heading">予約・お問い合わせ</h2>
+            <p class="c-contact-form"><a target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScIN_OkEnrZUrEb5bz6FjbApRZnEXyw12ynUhGqINq9rStZTA/viewform?usp=publish-editor">ご予約・お問い合わせはこちらから</a>
+            </p>
+            <h3>住所</h3>
+            <p>住所は予約時お知らせします。<br>内牧温泉街から車で10分程度です。</p>
+            <!-- <h3>Eメール</h3>
+            <p>hello@subarashiisaito.co.jp</p> -->
+          </div>
+          <div class="c-contact__img">
+            <img src="https://placehold.jp/800x500.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
