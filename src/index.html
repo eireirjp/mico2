@@ -26,7 +26,7 @@
           <ul class="navbar-nav ms-auto"
             @click="if(window.innerWidth < 768) bootstrap.Collapse.getInstance($refs.navMenu).hide()">
             <li class="nav-item">
-              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link active" href="#story">Story</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#medicalaloma">メディカルアロマ</a>
@@ -43,23 +43,24 @@
     </nav>
   </header>
   <main>
-    <section id="story" class="c-story c-story--lead">
-      <div class="o-inner py-5">
-        <div class="c-story__inner">
-          <div class="c-story__text-box">
-            <h1 class="c-heading c-story__heading">阿蘇の自然に<br>心が解き放たれる</h1>
+    <section class="c-kv">
+      <div class="container px-0">
+        <div class="row flex-column-reverse flex-md-row">
+          <div class="col-md-4">
+            <h1 class="c-kv__title">阿蘇の自然に<br>心が解き放たれる</h1>
           </div>
-          <div class="c-story__img">
+          <div class="col-md-8">
             <img src="https://placehold.jp/800x500.png" alt="">
           </div>
         </div>
+      </div>
       </div>
     </section>
     <section id="story" class="c-story">
       <div class="o-inner py-5">
         <div class="c-story__inner">
           <div class="c-story__text-box">
-            <h2 class="c-heading c-story__heading">ストーリー</h2>
+            <h2 class="c-heading c-story__heading">Story</h2>
             <p class="c-story__text">実子のポリシー的なお話ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
           </div>
           <div class="c-story__img">
@@ -182,8 +183,8 @@
             </p>
             <h3>住所</h3>
             <p>住所は予約時お知らせします。<br>内牧温泉街から車で10分程度です。</p>
-            <!-- <h3>Eメール</h3>
-            <p>hello@subarashiisaito.co.jp</p> -->
+            <h3>Eメール</h3>
+            <p>hello@subarashiisaito.co.jp</p>
           </div>
           <div class="c-contact__img">
             <img src="https://placehold.jp/800x500.png" alt="">
