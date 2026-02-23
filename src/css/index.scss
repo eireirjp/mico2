@@ -76,6 +76,10 @@ h1 {
   display: grid;
   justify-items: flex-start;
   align-content: flex-end;
+  .c-kv__title {
+    font-weight: 200;
+    font-variation-settings: "wght" 200;
+  }
   @include media-breakpoint-up(md) {
     padding: 3rem;
   }
